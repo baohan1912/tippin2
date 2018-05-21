@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">tippin_han_ttv</string>
+    <string name="intro_content_slide_one1">デジタル上に自分の獲得した</string>
+    <string name="intro_content_slide_one2">信用・信頼のログを残して活用する</string>
+    <string name="intro_content_slide_one3">あなたのソーシャルキャピタルを獲得して使えるサービス</string>
+    <string name="intro_content_slide_two1">誰かのためになる</string>
+    <string name="intro_content_slide_two2">役に立つ、貢献する。</string>
+    <string name="intro_content_slide_two3">日常のあなたの活動や行いで、</string>
+    <string name="intro_content_slide_two4">ソーシャルキャピタルを獲得してデジタル通貨へ交換する</string>
+    <string name="intro_content_slide_three1">リアル仮想通貨と交換</string>
+    <string name="intro_content_slide_three2">獲得したデジタル通貨の一部を仮想通貨と交換して利用可能に。</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="register_or">Or</string>
+    <string name="sign_up">Sign up</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="forgotpassword" ><u>Forgot password?</u></string>
+    <string name="back">back</string>
+    <string name="phoneverification">Phone verification</string>
+    <string name="settingTwoFactorAuth_twoStepAuthentication">Two factor Authentication</string>
+    <string name="settingTwoFactorAuth_description">Google Authenticator などの認証コード生成用のモバイルアプリでQRコードを読み取り、ログイン時の本人確認が必要な時にセキュリティコードを送信されます。</string>
+    <string name="qr_code">QR code</string>
+</resources>

@@ -18,7 +18,7 @@ public class TwofactorauthActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_twofactor);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_setting_twofactor);
         initiate();
     }
 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="border_color" format="reference|color" />
+    <attr name="border_size" format="reference|dimension" />
+
+    <declare-styleable name="CustomRoundedEditText">
+        <attr name="border_color" />
+        <attr name="border_size" />
+        <attr name="allow_show_check_icon" format="boolean" />
+        <attr name="allow_show_icon" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomRoundedButton">
+        <attr name="border_color" />
+        <attr name="border_size" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomToggleButton">
+        <attr name="CustomToggleButton_borderWidth" format="reference|dimension" />
+        <attr name="CustomToggleButton_borderColorOn" format="reference|color" />
+        <attr name="CustomToggleButton_handleColorOn" format="reference|color" />
+        <attr name="CustomToggleButton_borderColorOff" format="reference|color" />
+        <attr name="CustomToggleButton_handleColorOff" format="reference|color" />
+        <attr name="CustomToggleButton_backgroundColor" format="reference|color" />
+        <attr name="CustomToggleButton_defaultValue" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCircleImageView">
+        <attr name="CircleImageView_borderWidth" format="reference|dimension" />
+        <attr name="CircleImageView_borderColor" format="reference|color" />
+        <attr name="CircleImageView_borderOverlay" format="reference|boolean" />
+        <attr name="CircleImageView_scaleFillXY" format="reference|boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomRoundedImageView">
+        <attr name="RoundedImageView_borderWidth" format="reference|dimension"/>
+        <attr name="RoundedImageView_borderColor" format="reference|color"/>
+        <attr name="RoundedImageView_cornerRadius" format="reference|dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomRoundedTextView">
+        <attr name="border_color" />
+        <attr name="border_size" />
+        <attr name="is_select_category" format="boolean" />
+        <attr name="is_category" format="boolean" />
+        <attr name="is_checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="back_color" format="color|reference" />
+        <attr name="progress_color" format="color|reference" />
+        <attr name="progress_width" format="dimension|reference" />
+        <attr name="progress" format="integer|reference" />
+        <attr name="animate_duration" format="integer|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="DragGuideAnimationView">
+        <attr name="numbers_of_lines" format="integer" />
+        <attr name="active_line_color" format="color|reference" />
+        <attr name="inactive_line_color" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchBoxView">
+        <attr name="text_size" format="float|dimension" />
+        <attr name="hint" format="string" />
+        <attr name="hint_color" format="color|reference" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="background_box" format="color|reference" />
+        <attr name="middle_hint" format="boolean" />
+        <attr name="search_cancelable" format="boolean" />
+        <attr name="left_icon" format="reference" />
+        <attr name="always_left" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomCheckBox">
+        <attr name="check_drawable" format="reference" />
+        <attr name="un_check_drawable" format="reference" />
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="oval"
+            android:useLevel="false">
+            <size
+                android:width="@dimen/slide_indicator_size"
+                android:height="@dimen/slide_indicator_size"/>
+            <stroke android:color="@color/all_colorWhite" android:width="1dp"> </stroke>
+            <solid android:color="@color/all_colorWhite"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval"
+            android:useLevel="false">
+            <size
+                android:width="@dimen/slide_indicator_size"
+                android:height="@dimen/slide_indicator_size"/>
+            <stroke android:color="@color/all_colorWhite" android:width="1dp"> </stroke>
+            <solid android:color="@color/all_transparent"/>
+        </shape>
+    </item>
+
+</selector>

@@ -19,7 +19,11 @@
 
         </activity>
         <activity android:name=".views.Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".views.PhoneVerification.PhoneVerifyActivity">
 
@@ -28,11 +32,7 @@
 
         </activity>
         <activity android:name=".views.twofactorauth.TwofactorauthActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

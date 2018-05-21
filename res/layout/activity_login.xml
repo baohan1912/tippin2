@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="loginmodel"
+            type="com.example.han_ttb_ttv.tippin2.views.Login.LoginViewModel"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red_background">
+
+        <include
+            android:id="@+id/toolbarLogin"
+            layout="@layout/custom_actionbar"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarLogin">
+            <EditText
+                android:id="@+id/editTextEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/all_colorWhite"
+                android:hint="Email"
+                android:textColorHint="@color/all_colorWhite"
+                android:text="@{loginmodel.user.email}"
+                android:padding="@dimen/btn_padding_bottom"
+                android:background="@drawable/textviewroundedwhite"
+                android:drawableLeft="@drawable/ic_email_white"
+                android:drawablePadding="@dimen/drawable_padding_bottom"
+                android:layout_marginBottom="@dimen/TVgroup_marginbot"
+                />
+
+            <EditText
+                android:id="@+id/editTextPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColorHint="@color/all_colorWhite"
+                android:text="@{loginmodel.user.password}"
+                android:textColor="@color/all_colorWhite"
+                android:padding="@dimen/btn_padding_bottom"
+                android:background="@drawable/textviewroundedwhite"
+                android:drawableLeft="@drawable/ic_password_white"
+                android:drawablePadding="@dimen/drawable_padding_bottom"
+                android:layout_marginBottom="@dimen/TVgroup_marginbot"
+                />
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/all_colorWhite"
+                android:background="@drawable/btnroundedorange"
+                />
+            <RelativeLayout
+                android:id="@+id/llSeparator"
+                android:layout_width="@dimen/width_register_separate"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_marginBottom="@dimen/marginBottom_register_separator"
+                android:layout_marginTop="@dimen/marginTop_register_separator"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_register_separatorLine"
+                    android:layout_centerVertical="true"
+                    android:background="@color/all_colorWhite" />
+
+                <TextView
+                    android:id="@+id/txvSeparatorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/all_colorRed"
+                    android:paddingEnd="@dimen/paddingLeftRight_register_separatorText"
+                    android:paddingStart="@dimen/paddingLeftRight_register_separatorText"
+                    android:text="@string/register_or"
+                    android:textAlignment="center"
+                    android:textColor="@color/all_colorWhite"
+                    android:textSize="@dimen/fontSize_14" />
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnCreateAccByEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login by facebook"
+                android:textColor="@color/all_colorWhite"
+                android:background="@drawable/btnroundedblue"
+                android:drawablePadding="@dimen/drawable_padding_bottom"
+                android:layout_marginBottom="@dimen/marginBottom_register_separator"
+                />
+            <TextView
+                android:id="@+id/textForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/all_colorWhite"
+                android:text="@string/forgotpassword"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</layout>
